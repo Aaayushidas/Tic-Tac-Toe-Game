@@ -1,0 +1,68 @@
+body{
+	background-color:rgb(233, 201, 201);
+	
+}
+
+
+
+/* Settings grid layout for container and position
+auto template for center alignment
+*/
+.game-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+
+}
+
+/* Settings for individual cells in grid
+user-select for disable text highlight
+*/
+.cell {
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(19, 18, 18);
+    cursor: pointer;
+    font-size: 85px;
+    padding: 5px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.restart {
+    font-size: 20px;
+    padding: 5px;
+}
+
+/* Remove outline border to look like an tic tac toe board
+*/
+#c00, #c01, #c02 {
+    border-top: none;
+}
+#c00, #c10, #c20 {
+    border-left: none;
+}
+#c02, #c12, #c22 {
+    border-right: none;
+}
+#c20, #c21, #c22 {
+    border-bottom: none;
+}
+h1{
+    text-decoration: underline;
+}
+.restart{
+    background: rgb(209, 202, 202);
+    font-size: 22px;
+    padding: 5px 12px;
+}
+select{
+    background-color: rgb(228, 222, 225);
+    font-size: 18px;
+    padding: 3px 6px;
+}
